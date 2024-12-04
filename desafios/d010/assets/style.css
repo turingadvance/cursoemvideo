@@ -9,7 +9,7 @@
 }
 
 :root {
-    --cor01: #c5ebd3;
+    --cor01: #ebe5c5;
     --cor02: #83e1ad;
     --cor03: #3ddc84;
     --cor04: #2fa866;
@@ -28,6 +28,7 @@
 
 body {
     background-color: var(--cor01);
+    font-family: var(--fonte-padrao);
 }
 
 header{
@@ -70,7 +71,7 @@ nav > a{
     padding: 10px;
     border-radius: 5px;
     transition-duration: 0.4s;
-    text-decoration: none;
+    text-decoration: none; 
     font-weight: bold;
 }
 
@@ -97,7 +98,7 @@ main img{
 }
 
 main img.pequena{
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
@@ -108,10 +109,39 @@ main h1{
 }
 
 main h2{
+    font-size: 1.3em;
     font-family: var(--fonte-android);
     color: var(--cor05);
+    background-image: linear-gradient(to right, var(--cor02), transparent );
+    text-indent: 8px;
 }
 
+
+main p{
+    margin: 15px 0px;
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.6em;
+}
+
+main strong{
+    color: var(--cor06);
+    font-weight: bold;
+}
+
+main a{
+    color: var(--cor06);
+    background-color: var(--cor02);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor05);
+}
 footer{
     background-color: var(--cor06);
     color: white;
